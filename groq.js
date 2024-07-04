@@ -16,21 +16,14 @@ urlBtnSearch.addEventListener("click", async () => {
   const htmlResponse = response.html;
   const markdownResponse = response.markdown;
   const ttsResponse = response.tts;
- 
-  // Afficher le résumé en HTML
-  const htmlElement = document.createElement("div");
-  htmlElement.innerHTML = htmlResponse;
-  document.body.appendChild(htmlElement);
 
-  // Afficher le résumé en Markdown
-  const markdownElement = document.createElement("div");
-  markdownElement.innerHTML = markdownResponse;
-  document.body.appendChild(markdownElement);
-
-  // Jouer le texte en TTS
-  const audioElement = document.createElement("audio");
-  audioElement.src = ttsResponse;
-  audioElement.play();
+  // Créer une nouvelle page avec le résumé et la version audio
+  const newPage = document.createElement("div");
+  newPage.innerHTML = `
+    <h1>${summary}</h1>
+    <audio src="${ttsResponse}" controls></audio>
+  `;
+  document.body.appendChild(newPage);
 });
 
 async function getGroqChatCompletion(url) {

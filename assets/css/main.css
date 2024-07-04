@@ -4,6 +4,9 @@ html {
   overflow-x: hidden;
 }
 
+.search-container-div {
+  background-color: #00aced;
+}
 
 .search {
   display: flex;
@@ -21,7 +24,7 @@ html {
   padding: 0.7rem 1rem;
   border-radius: 30px;
   width: 50em;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   margin-right: -2rem;
 }
 
@@ -40,7 +43,7 @@ html {
   color: #ccc;
 }
 
-.searchinput:focus+.searchbutton {
+.searchinput:focus + .searchbutton {
   background-color: #f0eeee;
 }
 
@@ -59,14 +62,12 @@ html {
   margin-top: 1em;
 }
 
-
 .search__icon {
   height: 100%;
   width: 60%;
   padding: 0;
   display: flex;
 }
-
 
 :root {
   --accent-color: #1e90ff;
@@ -76,7 +77,7 @@ body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -95,7 +96,7 @@ h4 {
   font-size: 38px;
   color: #222222;
   font-weight: 700;
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
 }
 
 a {
@@ -115,7 +116,7 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #222222;
   margin: 0px;
   font-size: 14px;
@@ -213,9 +214,9 @@ a:not([href]):not([tabindex]) {
   background: transparent;
   border: 1px dotted var(--accent-color);
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-  transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .btn-border {
@@ -289,7 +290,7 @@ button:focus {
 }
 
 .social-icon .twitter:hover {
-  background: #4A9CEC;
+  background: #4a9cec;
 }
 
 .social-icon .instagram:hover {
@@ -297,7 +298,7 @@ button:focus {
 }
 
 .social-icon .linkedin:hover {
-  background: #1260A2;
+  background: #1260a2;
 }
 
 .social-icon .google:hover {
@@ -431,15 +432,15 @@ hr {
 }
 
 #features .box-item {
-  box-shadow: 0 0 12px #F4F4F4;
+  box-shadow: 0 0 12px #f4f4f4;
   padding: 15px;
   line-height: 22px;
   margin-top: 30px;
   border-radius: 3px;
   background-color: #fff;
-  -webkit-transition: all .3s ease-in-out;
-  -mox-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -mox-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   top: 0;
 }
@@ -500,7 +501,7 @@ hr {
   border-radius: 4px;
   text-align: center;
   margin: 15px 0;
-  box-shadow: 0 0 12px #F4F4F4;
+  box-shadow: 0 0 12px #f4f4f4;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -567,7 +568,7 @@ hr {
   display: table;
 }
 
-.about-area .about-wrapper>div {
+.about-area .about-wrapper > div {
   vertical-align: middle;
   display: table-cell;
 }
@@ -680,7 +681,7 @@ hr {
 
 .navbar-expand-md .navbar-nav .nav-link:before {
   background-color: var(--accent-color);
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   position: absolute;
@@ -696,16 +697,16 @@ hr {
 }
 
 .navbar-expand-md .navbar-nav li a:hover,
-.navbar-expand-md .navbar-nav li .active>a,
+.navbar-expand-md .navbar-nav li .active > a,
 .navbar-expand-md .navbar-nav li a:focus {
   color: #fff;
   outline: none;
 }
 
-.navbar-expand-md .navbar-nav .active>.nav-link,
+.navbar-expand-md .navbar-nav .active > .nav-link,
 .navbar-expand-md .navbar-nav .nav-link.active,
 .navbar-expand-md .navbar-nav .nav-link.open,
-.navbar-expand-md .navbar-nav .open>.nav-link {
+.navbar-expand-md .navbar-nav .open > .nav-link {
   color: var(--accent-color) !important;
   width: 100%;
 }
@@ -981,11 +982,11 @@ hr {
   border-radius: 4px;
   border: none !important;
   box-shadow: 0px 2px 18px 0px rgba(198, 198, 198, 0.3);
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #pricing .table .icon-box {
@@ -995,24 +996,24 @@ hr {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  background-color: #EBEDEF;
+  background-color: #ebedef;
   margin-bottom: 20px;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #pricing .table .icon-box i {
   color: var(--accent-color);
   line-height: 80px;
   font-size: 30px;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #pricing .table .pricing-header {
@@ -1185,19 +1186,19 @@ hr {
 }
 
 .testimonial-item .icon-social .twitter:hover {
-  background: #4A9CEC;
+  background: #4a9cec;
 }
 
 .testimonial-item .icon-social .instagram:hover {
-  background: #D6274D;
+  background: #d6274d;
 }
 
 .testimonial-item .icon-social .linkedin:hover {
-  background: #1260A2;
+  background: #1260a2;
 }
 
 .testimonial-item .icon-social .google:hover {
-  background: #CE332A;
+  background: #ce332a;
 }
 
 .owl-pagination {
@@ -1485,17 +1486,17 @@ textarea {
 }
 
 .social-icon .twitter:hover {
-  background: #4A9CEC;
+  background: #4a9cec;
 }
 
 .social-icon .instagram:hover {
-  background: #D6274D;
+  background: #d6274d;
 }
 
 .social-icon .linkedin:hover {
-  background: #1260A2;
+  background: #1260a2;
 }
 
 .social-icon .google:hover {
-  background: #CE332A;
+  background: #ce332a;
 }

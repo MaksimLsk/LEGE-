@@ -169,19 +169,20 @@
     </div>
   </div>
   <!-- Call To Action Section Start -->
-  <section id="cta" class="section-padding">
+  <section id="cta" class="section-padding search-container-div">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
           <div class="cta-text">
-            <h4>Obtenez un essai gratuit de 30 jours</h4>
-            <p>Mettez votre lien ici pour voir la magie.</p>
+            <h4>Testez notre solution :</h4>
+            <p>Mettez votre lien ici pour voir la magie!</p><br>
           </div>
         </div>
       </div>
       <div>
-        <div class="search"> <input type="text" class="searchinput" placeholder="Mettez votre lien ici...">
-          <button class="inputbtn">
+        <div class="search"> <input id="url-input" type="text" class="searchinput"
+            placeholder="Mettez votre lien ici...">
+          <button id="url_btn_search" class="inputbtn">
             <svg id="Layer_1" class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
               <g>
                 <svg fill="none" height="30" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +266,7 @@
               <li>2 mois offerts</li>
               <li>Support 24/7</li>
             </ul>
-            <button class="btn btn-common">Sélectionner</button>
+            <button class="btn btn-common">S'abonner</button>
           </div>
         </div>
       </div>
@@ -273,25 +274,119 @@
   </section>
   <!-- Pricing Table Section End -->
 
-  <!-- Testimonial Section Start -->
-  <section id="testimonial" class="testimonial section-padding">
+
+  <section id="Form-inscription">
+    <div class="form-container">
+      <form id="inscriptionForm">
+        <h2 id="para">Paramètre utilisateur</h2>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmEmail">Confirmez votre email</label>
+          <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirmez votre email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirmez votre mot de passe</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez votre mot de passe"
+            required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="disease">Maladies</label>
+          <select id="disease" name="disease" required>
+            <option value="">Sélectionnez une maladie</option>
+            <option value="diabetes">dyslexie</option>
+            <option value="hypertension">dysorthographie</option>
+            <option value="asthma">dyscalculie</option>
+            <option value="cancer">dyspraxie</option>
+            <option value="other">dysgraphie</option>
+            <option value="other">dysphasie</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-common">Paramètre utilisateur</button>
+      </form>
+  </section>
+
+  <!-- Team Section Start -->
+  <section id="team" class="testimonial section-padding">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="testimonial-item">
-            <div class="info">
-              <h2><a href="#">David Smith</a></h2>
-              <h2><a href="#">David Smith</a></h2>
-              <h2><a href="#">David Smith</a></h2>
-              <h2><a href="#">David Smith</a></h2>
+      <div class="section-header text-center">
+        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Notre Équipe</h2>
+        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+      </div>
+      <div class="row">
+        <!-- Team member -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-img">
+              <img src="assets/img/feature/image1.jpg" alt="photo du profil de Maksim"
+                style="width: 250px; height: 250px;">
             </div>
-            <div class="content">
+            <div class="team-content">
+              <h3>Maksim</h3>
+              <p>CEO</p>
+              <p>Développeur web</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team member -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-img">
+              <img src="assets/img/feature/image2.jpg" alt="photo du profil de Zack"
+                style="width: 250px; height: 250px;">
+            </div>
+            <div class="team-content">
+              <h3>Zack</h3>
+              <p>CTO</p>
+              <p>Développeur web</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team member -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="team-item wow fadeInUp" data-wow-delay="0.9s">
+            <div class="team-img">
+              <img src="assets/img/feature/image3.jpg" alt="photo du profil de Gaetan"
+                style="width: 250px; height: 250px;">
+            </div>
+            <div class="team-content">
+              <h3>Gaëtan</h3>
+              <p>COO</p>
+              <p>Développeur web</p>
+            </div>
+          </div>
+        </div>
+        <!-- Team member -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-img">
+              <img src="assets/img/feature/image4.jpg" alt="photo du profil de Fadili"
+                style="width: 250px; height: 250px;">
+            </div>
+            <div class="team-content">
+              <h3>Fadili</h3>
+              <p>CMO</p>
+              <p>Développeur web</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Team Section End -->
 
   <!-- Contact Section Start -->
   <section id="contact" class="section-padding bg-gray">
@@ -334,6 +429,8 @@
   </section>
   <!-- Contact Section End -->
 
+
+
   <!-- Footer Section Start -->
   <footer id="footer" class="footer-area section-padding">
     <div class="container">
@@ -355,46 +452,26 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Products</h3>
-            <ul class="footer-link">
-              <li><a href="#">Tracking</a></li>
-              <li><a href="#">Application</a></li>
-              <li><a href="#">Resource Planning</a></li>
-              <li><a href="#">Enterprise</a></li>
-              <li><a href="#">Employee Management</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Resources</h3>
-            <ul class="footer-link">
-              <li><a href="#">Payment Options</a></li>
-              <li><a href="#">Fee Schedule</a></li>
-              <li><a href="#">Getting Started</a></li>
-              <li><a href="#">Identity Verification</a></li>
-              <li><a href="#">Card Verification</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Contact</h3>
-            <ul class="address">
-              <li>
-                <address>
-                  <a href="https://www.google.com/maps/place/17+Rue+Delandine,+69002+Lyon,+France" target="_blank">
-                    <i class="lni-map-marker"></i>
-                    17 Rue Delandine, <br>
-                    69002 Lyon, France
-                  </a>
-                </address>
-              </li>
 
-              <li>
-                <a href="#"><i class="lni-envelope"></i> lege-web@proton.me</a>
-              </li>
-            </ul>
-          </div>
+          <h3 class="footer-titel">Contact</h3>
+          <ul class="address">
+            <li>
+              <address>
+                <a href="https://www.google.com/maps/place/17+Rue+Delandine,+69002+Lyon,+France" target="_blank">
+                  <i class="lni-map-marker"></i>
+                  17 Rue Delandine, <br>
+                  69002 Lyon, France
+                </a>
+              </address>
+            </li>
+
+            <li>
+              <a href="#"><i class="lni-envelope"></i> lege-web@proton.me</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
     </div>
     <div id="copyright">
       <div class="container">
@@ -433,6 +510,7 @@
   <script src="assets/js/jquery.counterup.min.js"></script>
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="./groq.js"></script>
 
 </body>
 
