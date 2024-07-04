@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Fusion - Bootstrap 4 Template</title>
-
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Icon -->
@@ -55,6 +55,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#team">
                 Équipe
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#settings">
+                Paramètres
               </a>
             </li>
             <li class="nav-item">
@@ -186,7 +191,56 @@
     </div>
   </section>
   <!-- Call To Action Section Start -->
+  <div class="form-container">
+    <form id="inscriptionForm">
+        <h2>Paramètres Utilisateur</h2>
 
+        <div class="form-group">
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmEmail">Confirmez votre email</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirmez votre email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirmez votre mot de passe</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez votre mot de passe" required>
+        </div>       
+
+        <div class="form-group">
+            <label for="dateOfBirth">Date de naissance</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        </div>
+
+        <div class="form-group">
+          <label for="disease">Maladie</label>
+          <select id="disease" name="disease" required>
+              <option value="">Sélectionnez une maladie</option>
+              <option value="diabetes">dyslexie</option>
+              <option value="hypertension">dysorthographie</option>
+              <option value="asthma">dyscalculie</option>
+              <option value="cancer">dyspraxie</option>
+              <option value="other">dysgraphie</option>
+              <option value="other">dysphasie</option>
+          </select>
+      </div>f
+      
+        <button type="submit">Inscription</button>
+    </form>
+</div>
   <!-- Pricing section Start -->
   <section id="pricing" class="section-padding">
     <div class="container">
@@ -441,6 +495,22 @@
   <script src="assets/js/jquery.counterup.min.js"></script>
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inscription Utilisateur</title>
+      <link rel="stylesheet" href="inscription.css">
+  </head>
+  <body>
+    
+  </body>
+  </html>
+  
+
 
 </body>
 
