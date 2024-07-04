@@ -4,6 +4,70 @@ html {
   overflow-x: hidden;
 }
 
+
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 70vw;
+}
+
+.searchinput {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 50em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.searchinput:hover,
+.searchinput:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.searchinput:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.searchinput::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #ccc;
+}
+
+.searchinput:focus+.searchbutton {
+  background-color: #f0eeee;
+}
+
+.inputbtn {
+  cursor: pointer;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.searchbutton {
+  border: none;
+  background-color: transparent;
+  margin-top: 1em;
+}
+
+
+.search__icon {
+  height: 100%;
+  width: 60%;
+  padding: 0;
+  display: flex;
+}
+
+
 :root {
   --accent-color: #1e90ff;
 }
