@@ -171,7 +171,7 @@
 
 
   <!-- Call To Action Section Start -->
-  <section id="cta" class="section-padding search-container-div">
+  <section id="cta" class="section-padding search-container-div" style="background-color: #00aced; color: #FFFFFF;">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
@@ -182,9 +182,10 @@
         </div>
       </div>
       <div>
-        <div class="search"> <input id="url-input" type="text" class="searchinput"
-            placeholder="Mettez votre lien ici...">
-          <button id="url_btn_search" class="inputbtn">
+        <div class="search">
+          <input id="url-input" type="text" class="searchinput form-control" placeholder="Mettez votre lien ici..."
+            style="color: #000000;">
+          <button id="url_btn_search" class="inputbtn btn btn-light">
             <svg id="Layer_1" class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
               <g>
                 <svg fill="none" height="30" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
@@ -195,15 +196,149 @@
                       d="m3.29289 14.7071c-.39052-.3905-.39052-1.0237 0-1.4142l4-4.00001c.39053-.39052 1.02369-.39052 1.41422 0 .39052.39053.39052 1.02371 0 1.41421l-3.2929 3.2929 3.2929 3.2929c.39052.3905.39052 1.0237 0 1.4142-.39053.3905-1.02369.3905-1.41422 0z" />
                   </g>
                 </svg>
-
               </g>
             </svg>
           </button>
         </div>
       </div>
+      <!-- Accordion Start -->
+      <details>
+        <summary style="color: #FFFFFF;">Paramètres</summary>
+        <div class="accordion-content">
+          <h5>Sélectionnez vos troubles :</h5>
+          <!-- Troubles "dys" -->
+          <div>
+            <input type="checkbox" id="dyslexie" name="troubles" value="dyslexie">
+            <label for="dyslexie">Dyslexie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dysorthographie" name="troubles" value="dysorthographie">
+            <label for="dysorthographie">Dysorthographie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dyscalculie" name="troubles" value="dyscalculie">
+            <label for="dyscalculie">Dyscalculie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dysgraphie" name="troubles" value="dysgraphie">
+            <label for="dysgraphie">Dysgraphie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dyspraxie" name="troubles" value="dyspraxie">
+            <label for="dyspraxie">Dyspraxie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dysphasie" name="troubles" value="dysphasie">
+            <label for="dysphasie">Dysphasie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dyschromatopsie" name="troubles" value="dyschromatopsie">
+            <label for="dyschromatopsie">Dyschromatopsie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dysmnésie" name="troubles" value="dysmnésie">
+            <label for="dysmnésie">Dysmnésie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dysmorphophobie" name="troubles" value="dysmorphophobie">
+            <label for="dysmorphophobie">Dysmorphophobie</label>
+          </div>
+          <!-- Troubles de la vision -->
+          <h5>Troubles de la vision :</h5>
+          <div>
+            <input type="checkbox" id="myopie" name="troubles" value="myopie">
+            <label for="myopie">Myopie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="hypermetropie" name="troubles" value="hypermetropie">
+            <label for="hypermetropie">Hypermétropie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="astigmatisme" name="troubles" value="astigmatisme">
+            <label for="astigmatisme">Astigmatisme</label>
+          </div>
+          <div>
+            <input type="checkbox" id="presbytie" name="troubles" value="presbytie">
+            <label for="presbytie">Presbytie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cataracte" name="troubles" value="cataracte">
+            <label for="cataracte">Cataracte</label>
+          </div>
+          <div>
+            <input type="checkbox" id="glaucome" name="troubles" value="glaucome">
+            <label for="glaucome">Glaucome</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dmla" name="troubles" value="dmla">
+            <label for="dmla">Dégénérescence maculaire liée à l'âge (DMLA)</label>
+          </div>
+          <div>
+            <input type="checkbox" id="retinopathie_diabetique" name="troubles" value="retinopathie_diabetique">
+            <label for="retinopathie_diabetique">Rétinopathie diabétique</label>
+          </div>
+          <div>
+            <input type="checkbox" id="retinite_pigmentaire" name="troubles" value="retinite_pigmentaire">
+            <label for="retinite_pigmentaire">Rétinite pigmentaire</label>
+          </div>
+          <!-- Daltonisme -->
+          <h5>Daltonisme :</h5>
+          <div>
+            <input type="checkbox" id="protanopie" name="troubles" value="protanopie">
+            <label for="protanopie">Protanopie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="protanomalie" name="troubles" value="protanomalie">
+            <label for="protanomalie">Protanomalie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="deuteranopie" name="troubles" value="deuteranopie">
+            <label for="deuteranopie">Deutéranopie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="deuteranomalie" name="troubles" value="deuteranomalie">
+            <label for="deuteranomalie">Deutéranomalie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tritanopie" name="troubles" value="tritanopie">
+            <label for="tritanopie">Tritanopie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tritanomalie" name="troubles" value="tritanomalie">
+            <label for="tritanomalie">Tritanomalie</label>
+          </div>
+          <div>
+            <input type="checkbox" id="achromatopsie" name="troubles" value="achromatopsie">
+            <label for="achromatopsie">Achromatopsie</label>
+          </div>
+          <!-- Troubles de l'attention -->
+          <h5>Troubles de l'attention :</h5>
+          <div>
+            <input type="checkbox" id="tdah" name="troubles" value="tdah">
+            <label for="tdah">Trouble de l'attention avec ou sans hyperactivité (TDAH)</label>
+          </div>
+          <!-- Autres troubles -->
+          <h5>Autres troubles :</h5>
+          <div>
+            <input type="checkbox" id="anxiete" name="troubles" value="anxiete">
+            <label for="anxiete">Anxiété</label>
+          </div>
+          <div>
+            <input type="checkbox" id="depression" name="troubles" value="depression">
+            <label for="depression">Dépression</label>
+          </div>
+          <div>
+            <input type="checkbox" id="troubles_cognitifs" name="troubles" value="troubles_cognitifs">
+            <label for="troubles_cognitifs">Troubles cognitifs</label>
+          </div>
+        </div>
+      </details>
+      <!-- Accordion End -->
     </div>
   </section>
-  <!-- Call To Action Section Start -->
+  <!-- Call To Action Section End -->
+
+
 
   <!-- Pricing section Start -->
   <section id="pricing" class="section-padding">
@@ -355,6 +490,7 @@
       </div>
       <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
         <div class="col-lg-7 col-md-12 col-sm-12">
+
           <!-- Call To Action Section Start -->
           <section id="cta" class="section-padding">
             <div class="container">
@@ -372,6 +508,8 @@
               </div>
             </div>
           </section>
+
+
           <!-- Call To Action Section Start -->
         </div>
         <div class="col-lg-5 col-md-12 col-xs-12">
