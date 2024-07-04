@@ -43,7 +43,7 @@ html {
   color: #ccc;
 }
 
-.searchinput:focus + .searchbutton {
+.searchinput:focus+.searchbutton {
   background-color: #f0eeee;
 }
 
@@ -68,6 +68,7 @@ html {
   padding: 0;
   display: flex;
 }
+
 
 :root {
   --accent-color: #1e90ff;
@@ -154,6 +155,14 @@ a:not([href]):not([tabindex]) {
   display: inline-block;
   font-weight: 700;
   position: relative;
+}
+
+.test {
+  color: white
+}
+
+.team {
+  color: white;
 }
 
 .shape {
@@ -568,7 +577,7 @@ hr {
   display: table;
 }
 
-.about-area .about-wrapper > div {
+.about-area .about-wrapper>div {
   vertical-align: middle;
   display: table-cell;
 }
@@ -697,16 +706,16 @@ hr {
 }
 
 .navbar-expand-md .navbar-nav li a:hover,
-.navbar-expand-md .navbar-nav li .active > a,
+.navbar-expand-md .navbar-nav li .active>a,
 .navbar-expand-md .navbar-nav li a:focus {
   color: #fff;
   outline: none;
 }
 
-.navbar-expand-md .navbar-nav .active > .nav-link,
+.navbar-expand-md .navbar-nav .active>.nav-link,
 .navbar-expand-md .navbar-nav .nav-link.active,
 .navbar-expand-md .navbar-nav .nav-link.open,
-.navbar-expand-md .navbar-nav .open > .nav-link {
+.navbar-expand-md .navbar-nav .open>.nav-link {
   color: var(--accent-color) !important;
   width: 100%;
 }
