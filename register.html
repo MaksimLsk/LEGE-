@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lege - Et le web s'adapte à vous!</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Register Section CSS -->
+    <link rel="stylesheet" href="assets/css/register.css">
+
+    <style>
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img id="logo" src="assets/img/logo-light-tiny.jpg"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="lni-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html/#hero-area">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">
+                                Solution
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#testimonial">
+                                Équipe
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#pricing">
+                                Tarif
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Register Section Start -->
+    <section id="register-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="register-form">
+                        <h2>Inscription</h2>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmEmail">Confirmer votre Email :</label>
+                                <input type="email" id="confirmEmail" name="confirmEmail" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Mot de passe :</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirmer votre mot de passe :</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control"
+                                    required>
+                            </div>
+                            <section id="register-section" style="margin-top: 3em;">
+                                <div class="container">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="troubles-content">
+                                                <h5>Sélectionnez vos troubles :</h5>
+
+                                                <!-- Troubles "dys" -->
+                                                <div>
+                                                    <input type="checkbox" id="dyslexie" name="troubles"
+                                                        value="dyslexie">
+                                                    <label for="dyslexie">Dyslexie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dysorthographie" name="troubles"
+                                                        value="dysorthographie">
+                                                    <label for="dysorthographie">Dysorthographie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dyscalculie" name="troubles"
+                                                        value="dyscalculie">
+                                                    <label for="dyscalculie">Dyscalculie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dysgraphie" name="troubles"
+                                                        value="dysgraphie">
+                                                    <label for="dysgraphie">Dysgraphie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dyspraxie" name="troubles"
+                                                        value="dyspraxie">
+                                                    <label for="dyspraxie">Dyspraxie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dysphasie" name="troubles"
+                                                        value="dysphasie">
+                                                    <label for="dysphasie">Dysphasie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dyschromatopsie" name="troubles"
+                                                        value="dyschromatopsie">
+                                                    <label for="dyschromatopsie">Dyschromatopsie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dysmnésie" name="troubles"
+                                                        value="dysmnésie">
+                                                    <label for="dysmnésie">Dysmnésie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dysmorphophobie" name="troubles"
+                                                        value="dysmorphophobie">
+                                                    <label for="dysmorphophobie">Dysmorphophobie</label>
+                                                </div>
+
+                                                <!-- Troubles de la vision -->
+                                                <h5>Troubles de la vision :</h5>
+                                                <div>
+                                                    <input type="checkbox" id="myopie" name="troubles" value="myopie">
+                                                    <label for="myopie">Myopie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="hypermetropie" name="troubles"
+                                                        value="hypermetropie">
+                                                    <label for="hypermetropie">Hypermétropie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="astigmatisme" name="troubles"
+                                                        value="astigmatisme">
+                                                    <label for="astigmatisme">Astigmatisme</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="presbytie" name="troubles"
+                                                        value="presbytie">
+                                                    <label for="presbytie">Presbytie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="cataracte" name="troubles"
+                                                        value="cataracte">
+                                                    <label for="cataracte">Cataracte</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="glaucome" name="troubles"
+                                                        value="glaucome">
+                                                    <label for="glaucome">Glaucome</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="dmla" name="troubles" value="dmla">
+                                                    <label for="dmla">Dégénérescence maculaire liée à l'âge
+                                                        (DMLA)</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="retinopathie_diabetique" name="troubles"
+                                                        value="retinopathie_diabetique">
+                                                    <label for="retinopathie_diabetique">Rétinopathie
+                                                        diabétique</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="retinite_pigmentaire" name="troubles"
+                                                        value="retinite_pigmentaire">
+                                                    <label for="retinite_pigmentaire">Rétinite
+                                                        pigmentaire</label>
+                                                </div>
+
+                                                <!-- Daltonisme -->
+                                                <h5>Daltonisme :</h5>
+                                                <div>
+                                                    <input type="checkbox" id="protanopie" name="troubles"
+                                                        value="protanopie">
+                                                    <label for="protanopie">Protanopie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="protanomalie" name="troubles"
+                                                        value="protanomalie">
+                                                    <label for="protanomalie">Protanomalie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="deuteranopie" name="troubles"
+                                                        value="deuteranopie">
+                                                    <label for="deuteranopie">Deutéranopie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="deuteranomalie" name="troubles"
+                                                        value="deuteranomalie">
+                                                    <label for="deuteranomalie">Deutéranomalie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="tritanopie" name="troubles"
+                                                        value="tritanopie">
+                                                    <label for="tritanopie">Tritanopie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="tritanomalie" name="troubles"
+                                                        value="tritanomalie">
+                                                    <label for="tritanomalie">Tritanomalie</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="achromatopsie" name="troubles"
+                                                        value="achromatopsie">
+                                                    <label for="achromatopsie">Achromatopsie</label>
+                                                </div>
+
+                                                <!-- Troubles de l'attention -->
+                                                <h5>Troubles de l'attention :</h5>
+                                                <div>
+                                                    <input type="checkbox" id="tdah" name="troubles" value="tdah">
+                                                    <label for="tdah">Trouble de l'attention avec ou sans
+                                                        hyperactivité (TDAH)</label>
+                                                </div>
+
+                                                <!-- Autres troubles -->
+                                                <h5>Autres troubles :</h5>
+                                                <div>
+                                                    <input type="checkbox" id="anxiete" name="troubles" value="anxiete">
+                                                    <label for="anxiete">Anxiété</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="depression" name="troubles"
+                                                        value="depression">
+                                                    <label for="depression">Dépression</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="troubles_cognitifs" name="troubles"
+                                                        value="troubles_cognitifs">
+                                                    <label for="troubles_cognitifs">Troubles cognitifs</label>
+                                                </div>
+                                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button type="submit" class="btn btn-primary">Créer son compte</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Register Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                    <div class="widget">
+                        <h3 class="footer-logo"><img src="assets/img/logo-light-tiny.jpg" alt=""></h3>
+                        <div class="textwidget">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt
+                                est,
+                                et
+                                euismod
+                                purus suscipit quis.</p>
+                        </div>
+                        <div class="social-icon">
+                            <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                            <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+                            <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+                            <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="footer-titel">Contact</h3>
+                <ul class="address">
+                    <li>
+                        <address>
+                            <a href="https://www.google.com/maps/place/17+Rue+Delandine,+69002+Lyon,+France"
+                                target="_blank">
+                                <i class="lni-map-marker"></i>
+                                17 Rue Delandine, <br>
+                                69002 Lyon, France
+                            </a>
+                        </address>
+                    </li>
+                    <li>
+                        <a href="#"><i class="lni-envelope"></i> lege-web@proton.me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-content">
+                            <p>Copyright © 2024 <a rel="nofollow" href="">Lege</a> All Right Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Other necessary scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Register Form Script -->
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>

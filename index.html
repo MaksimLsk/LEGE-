@@ -1,613 +1,154 @@
-<!DOCTYPE html>
-<html lang="fr">
+<section id="register-section" style="margin-top: 3em;">
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6">
+              <div class="register-form">
+                  <h2>Inscription</h2>
+                  <form id="registerForm">
+                      <!-- Vos champs de formulaire existants -->
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                      <!-- Nouvelle section pour les checkboxes -->
+                      <div class="troubles-content">
+                          <h5>Sélectionnez vos troubles :</h5>
 
-  <title>Lege - Et le web s'adapte à vous!</title>
+                          <!-- Troubles "dys" -->
+                          <div>
+                              <input type="checkbox" id="dyslexie" name="troubles" value="dyslexie">
+                              <label for="dyslexie">Dyslexie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dysorthographie" name="troubles" value="dysorthographie">
+                              <label for="dysorthographie">Dysorthographie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dyscalculie" name="troubles" value="dyscalculie">
+                              <label for="dyscalculie">Dyscalculie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dysgraphie" name="troubles" value="dysgraphie">
+                              <label for="dysgraphie">Dysgraphie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dyspraxie" name="troubles" value="dyspraxie">
+                              <label for="dyspraxie">Dyspraxie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dysphasie" name="troubles" value="dysphasie">
+                              <label for="dysphasie">Dysphasie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dyschromatopsie" name="troubles" value="dyschromatopsie">
+                              <label for="dyschromatopsie">Dyschromatopsie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dysmnésie" name="troubles" value="dysmnésie">
+                              <label for="dysmnésie">Dysmnésie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dysmorphophobie" name="troubles" value="dysmorphophobie">
+                              <label for="dysmorphophobie">Dysmorphophobie</label>
+                          </div>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <!-- Icon -->
-  <link rel="stylesheet" href="assets/fonts/line-icons.css">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.css">
+                          <!-- Troubles de la vision -->
+                          <h5>Troubles de la vision :</h5>
+                          <div>
+                              <input type="checkbox" id="myopie" name="troubles" value="myopie">
+                              <label for="myopie">Myopie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="hypermetropie" name="troubles" value="hypermetropie">
+                              <label for="hypermetropie">Hypermétropie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="astigmatisme" name="troubles" value="astigmatisme">
+                              <label for="astigmatisme">Astigmatisme</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="presbytie" name="troubles" value="presbytie">
+                              <label for="presbytie">Presbytie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="cataracte" name="troubles" value="cataracte">
+                              <label for="cataracte">Cataracte</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="glaucome" name="troubles" value="glaucome">
+                              <label for="glaucome">Glaucome</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="dmla" name="troubles" value="dmla">
+                              <label for="dmla">Dégénérescence maculaire liée à l'âge (DMLA)</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="retinopathie_diabetique" name="troubles"
+                                  value="retinopathie_diabetique">
+                              <label for="retinopathie_diabetique">Rétinopathie diabétique</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="retinite_pigmentaire" name="troubles"
+                                  value="retinite_pigmentaire">
+                              <label for="retinite_pigmentaire">Rétinite pigmentaire</label>
+                          </div>
 
-  <link rel="stylesheet" href="assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
-  <!-- Animate -->
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <!-- Main Style -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <!-- Responsive Style -->
-  <link rel="stylesheet" href="assets/css/responsive.css">
+                          <!-- Daltonisme -->
+                          <h5>Daltonisme :</h5>
+                          <div>
+                              <input type="checkbox" id="protanopie" name="troubles" value="protanopie">
+                              <label for="protanopie">Protanopie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="protanomalie" name="troubles" value="protanomalie">
+                              <label for="protanomalie">Protanomalie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="deuteranopie" name="troubles" value="deuteranopie">
+                              <label for="deuteranopie">Deutéranopie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="deuteranomalie" name="troubles" value="deuteranomalie">
+                              <label for="deuteranomalie">Deutéranomalie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="tritanopie" name="troubles" value="tritanopie">
+                              <label for="tritanopie">Tritanopie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="tritanomalie" name="troubles" value="tritanomalie">
+                              <label for="tritanomalie">Tritanomalie</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="achromatopsie" name="troubles" value="achromatopsie">
+                              <label for="achromatopsie">Achromatopsie</label>
+                          </div>
 
-</head>
+                          <!-- Troubles de l'attention -->
+                          <h5>Troubles de l'attention :</h5>
+                          <div>
+                              <input type="checkbox" id="tdah" name="troubles" value="tdah">
+                              <label for="tdah">Trouble de l'attention avec ou sans hyperactivité (TDAH)</label>
+                          </div>
 
-<body>
+                          <!-- Autres troubles -->
+                          <h5>Autres troubles :</h5>
+                          <div>
+                              <input type="checkbox" id="anxiete" name="troubles" value="anxiete">
+                              <label for="anxiete">Anxiété</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="depression" name="troubles" value="depression">
+                              <label for="depression">Dépression</label>
+                          </div>
+                          <div>
+                              <input type="checkbox" id="troubles_cognitifs" name="troubles"
+                                  value="troubles_cognitifs">
+                              <label for="troubles_cognitifs">Troubles cognitifs</label>
+                          </div>
+                      </div>
 
-  <!-- Header Area wrapper Starts -->
-  <header id="header-wrap">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="index.html" class="navbar-brand"><img id="logo" src="assets/img/logo-light-tiny.jpg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="lni-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-            <li class="nav-item active">
-              <a class="nav-link" href="#hero-area">
-                Accueil
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">
-                Solution
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial">
-                Équipe
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">
-                Tarif
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+                      <button type="submit" class="btn btn-primary">Créer son compte</button>
+                  </form>
+              </div>
+          </div>
       </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Area Start -->
-    <div id="hero-area" class="hero-area-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-            <div class="contents">
-              <h2 class="head-title">Et le web s'adapte à vous!</h2>
-              <p>En un clic, Lege adapte instantanément le contenu des sites que vous visitez pour une expérience
-                optimale et personnalisée. Notre extension détecte vos préférences, simplifiant ainsi votre navigation
-                en ligne et éliminant les obstacles liés aux troubles dyslexiques, à l'attention ou à la surdité,
-                rendant le web plus inclusif pour tous. Explorez un web où chaque utilisateur peut accéder à
-                l'information de manière claire et accessible.</p>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-            <div class="intro-img">
-              <img class="img-fluid" src="assets/img/intro-mobile.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Hero Area End -->
-
-  </header>
-  <!-- Header Area wrapper End -->
-
-  <!-- Services Section Start -->
-  <section id="services" class="section-padding">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Notre solution</h2>
-        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-      </div>
-      <div class="row">
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
-            <div class="icon">
-              <i class="lni-layers"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Navigation simplifiée</a></h3>
-              <p>Profitez d’une expérience utilisateur améliorée grâce à notre solution ergonomique et inclusive.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
-            <div class="icon">
-              <i class="lni-cog"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Facile à utiliser</a></h3>
-              <p>Notre extension offre une interface conviviale, simplifiant l’accessibilité sur le web en un seul clic.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="lni-users"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Personnalisation</a></h3>
-              <p>Notre extension permet de personnaliser les paramètres selon les besoins spécifiques de chaque
-                utilisateur, tels que le contraste des couleurs, la taille du texte et la police adaptée.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- Services Section End -->
-
-  <!-- About Section start -->
-  <div class="about-area section-padding bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-xs-12 info">
-          <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-          <img class="img-fluid" src="assets/img/about/img-1.svg" alt="">
-        </div>
-      </div>
-    </div>
   </div>
-
-
-  <!-- Call To Action Section Start -->
-  <section id="cta" class="section-padding search-container-div" style="background-color: #00aced; color: #FFFFFF;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
-          <div class="cta-text">
-            <h4>Testez notre solution :</h4>
-            <p>Mettez votre lien ici pour voir la magie!</p><br>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="search">
-          <input id="url-input" type="text" class="searchinput form-control" placeholder="Mettez votre lien ici..."
-            style="color: #000000;">
-          <button id="url_btn_search" class="inputbtn btn btn-light">
-            <svg id="Layer_1" class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-              <g>
-                <svg fill="none" height="30" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-rule="evenodd" fill="rgb(0,0,0)" fill-rule="evenodd">
-                    <path
-                      d="m3 14c0-.5523.44772-1 1-1h12c1.6569 0 3-1.3431 3-3v-4c0-.55229.4477-1 1-1s1 .44771 1 1v4c0 2.7614-2.2386 5-5 5h-12c-.55228 0-1-.4477-1-1z" />
-                    <path
-                      d="m3.29289 14.7071c-.39052-.3905-.39052-1.0237 0-1.4142l4-4.00001c.39053-.39052 1.02369-.39052 1.41422 0 .39052.39053.39052 1.02371 0 1.41421l-3.2929 3.2929 3.2929 3.2929c.39052.3905.39052 1.0237 0 1.4142-.39053.3905-1.02369.3905-1.41422 0z" />
-                  </g>
-                </svg>
-              </g>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- Accordion Start -->
-      <details>
-        <summary style="color: #FFFFFF;">Paramètres</summary>
-        <div class="accordion-content">
-          <h5>Sélectionnez vos troubles :</h5>
-          <!-- Troubles "dys" -->
-          <div>
-            <input type="checkbox" id="dyslexie" name="troubles" value="dyslexie">
-            <label for="dyslexie">Dyslexie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dysorthographie" name="troubles" value="dysorthographie">
-            <label for="dysorthographie">Dysorthographie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dyscalculie" name="troubles" value="dyscalculie">
-            <label for="dyscalculie">Dyscalculie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dysgraphie" name="troubles" value="dysgraphie">
-            <label for="dysgraphie">Dysgraphie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dyspraxie" name="troubles" value="dyspraxie">
-            <label for="dyspraxie">Dyspraxie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dysphasie" name="troubles" value="dysphasie">
-            <label for="dysphasie">Dysphasie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dyschromatopsie" name="troubles" value="dyschromatopsie">
-            <label for="dyschromatopsie">Dyschromatopsie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dysmnésie" name="troubles" value="dysmnésie">
-            <label for="dysmnésie">Dysmnésie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dysmorphophobie" name="troubles" value="dysmorphophobie">
-            <label for="dysmorphophobie">Dysmorphophobie</label>
-          </div>
-          <!-- Troubles de la vision -->
-          <h5>Troubles de la vision :</h5>
-          <div>
-            <input type="checkbox" id="myopie" name="troubles" value="myopie">
-            <label for="myopie">Myopie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="hypermetropie" name="troubles" value="hypermetropie">
-            <label for="hypermetropie">Hypermétropie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="astigmatisme" name="troubles" value="astigmatisme">
-            <label for="astigmatisme">Astigmatisme</label>
-          </div>
-          <div>
-            <input type="checkbox" id="presbytie" name="troubles" value="presbytie">
-            <label for="presbytie">Presbytie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="cataracte" name="troubles" value="cataracte">
-            <label for="cataracte">Cataracte</label>
-          </div>
-          <div>
-            <input type="checkbox" id="glaucome" name="troubles" value="glaucome">
-            <label for="glaucome">Glaucome</label>
-          </div>
-          <div>
-            <input type="checkbox" id="dmla" name="troubles" value="dmla">
-            <label for="dmla">Dégénérescence maculaire liée à l'âge (DMLA)</label>
-          </div>
-          <div>
-            <input type="checkbox" id="retinopathie_diabetique" name="troubles" value="retinopathie_diabetique">
-            <label for="retinopathie_diabetique">Rétinopathie diabétique</label>
-          </div>
-          <div>
-            <input type="checkbox" id="retinite_pigmentaire" name="troubles" value="retinite_pigmentaire">
-            <label for="retinite_pigmentaire">Rétinite pigmentaire</label>
-          </div>
-          <!-- Daltonisme -->
-          <h5>Daltonisme :</h5>
-          <div>
-            <input type="checkbox" id="protanopie" name="troubles" value="protanopie">
-            <label for="protanopie">Protanopie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="protanomalie" name="troubles" value="protanomalie">
-            <label for="protanomalie">Protanomalie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="deuteranopie" name="troubles" value="deuteranopie">
-            <label for="deuteranopie">Deutéranopie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="deuteranomalie" name="troubles" value="deuteranomalie">
-            <label for="deuteranomalie">Deutéranomalie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="tritanopie" name="troubles" value="tritanopie">
-            <label for="tritanopie">Tritanopie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="tritanomalie" name="troubles" value="tritanomalie">
-            <label for="tritanomalie">Tritanomalie</label>
-          </div>
-          <div>
-            <input type="checkbox" id="achromatopsie" name="troubles" value="achromatopsie">
-            <label for="achromatopsie">Achromatopsie</label>
-          </div>
-          <!-- Troubles de l'attention -->
-          <h5>Troubles de l'attention :</h5>
-          <div>
-            <input type="checkbox" id="tdah" name="troubles" value="tdah">
-            <label for="tdah">Trouble de l'attention avec ou sans hyperactivité (TDAH)</label>
-          </div>
-          <!-- Autres troubles -->
-          <h5>Autres troubles :</h5>
-          <div>
-            <input type="checkbox" id="anxiete" name="troubles" value="anxiete">
-            <label for="anxiete">Anxiété</label>
-          </div>
-          <div>
-            <input type="checkbox" id="depression" name="troubles" value="depression">
-            <label for="depression">Dépression</label>
-          </div>
-          <div>
-            <input type="checkbox" id="troubles_cognitifs" name="troubles" value="troubles_cognitifs">
-            <label for="troubles_cognitifs">Troubles cognitifs</label>
-          </div>
-        </div>
-      </details>
-      <!-- Accordion End -->
-    </div>
-  </section>
-  <!-- Call To Action Section End -->
-
-
-
-  <!-- Pricing section Start -->
-  <section id="pricing" class="section-padding">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Tarif</h2>
-        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="table wow fadeInLeft" data-wow-delay="1.2s">
-            <div class="icon-box">
-              <i class="lni-package"></i>
-            </div>
-            <div class="pricing-header">
-              <p class="price-value">0€<span> /mois</span></p>
-            </div>
-            <div class="title">
-              <h3>Gratuit</h3>
-            </div>
-            <ul class="description">
-              <li></li>
-              <li>Adaptation Quasi-instantée</li>
-              <li>10 sites par jour</li>
-              <li>Résumé préconçu</li>
-            </ul>
-            <button class="btn btn-common">Créer un compte</button>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 active">
-          <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
-            <div class="icon-box">
-              <i class="lni-drop"></i>
-            </div>
-            <div class="pricing-header">
-              <p class="price-value">5€<span> /mois</span></p>
-            </div>
-            <div class="title">
-              <h3>Mensuel</h3>
-            </div>
-            <ul class="description">
-              <li>Génération instantanée</li>
-              <li>Sans limite de sites</li>
-              <li>Support prioritaire</li>
-            </ul>
-            <button class="btn btn-common">s'abonner</button>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="table wow fadeInRight" data-wow-delay="1.2s">
-            <div class="icon-box">
-              <i class="lni-star"></i>
-            </div>
-            <div class="pricing-header">
-              <p class="price-value">50€<span> /an</span></p>
-            </div>
-            <div class="title">
-              <h3>Annuel</h3>
-            </div>
-            <ul class="description">
-              <li>Personnalisation poussée</li>
-              <li>2 mois offerts</li>
-              <li>Support 24/7</li>
-            </ul>
-            <button class="btn btn-common">S'abonner</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Pricing Table Section End -->
-
-
-  <!-- Team Section Start -->
-  <section id="team" class="testimonial section-padding">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Notre Équipe</h2>
-        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-      </div>
-      <div class="row">
-        <!-- Team member -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-img">
-              <img src="assets/img/feature/image1.jpg" alt="photo du profil de Maksim"
-                style="width: 250px; height: 250px;">
-            </div>
-            <div class="team-content">
-              <h3>Maksim</h3>
-              <p>CEO</p>
-              <p>Développeur web</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team member -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
-            <div class="team-img">
-              <img src="assets/img/feature/image2.jpg" alt="photo du profil de Zack"
-                style="width: 250px; height: 250px;">
-            </div>
-            <div class="team-content">
-              <h3>Zack</h3>
-              <p>CTO</p>
-              <p>Développeur web</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team member -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="team-item wow fadeInUp" data-wow-delay="0.9s">
-            <div class="team-img">
-              <img src="assets/img/feature/image3.jpg" alt="photo du profil de Gaetan"
-                style="width: 250px; height: 250px;">
-            </div>
-            <div class="team-content">
-              <h3>Gaëtan</h3>
-              <p>COO</p>
-              <p>Développeur web</p>
-            </div>
-          </div>
-        </div>
-        <!-- Team member -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-            <div class="team-img">
-              <img src="assets/img/feature/image4.jpg" alt="photo du profil de Fadili"
-                style="width: 250px; height: 250px;">
-            </div>
-            <div class="team-content">
-              <h3>Fadili</h3>
-              <p>CMO</p>
-              <p>Développeur web</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Team Section End -->
-
-  <!-- Contact Section Start -->
-  <section id="contact" class="section-padding bg-gray">
-    <div class="container">
-      <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Rejoignez-nous</h2>
-        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-      </div>
-      <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
-        <div class="col-lg-7 col-md-12 col-sm-12">
-
-          <!-- Call To Action Section Start -->
-          <section id="cta" class="section-padding">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
-                  <div class="cta-text">
-                    <h4>Vous êtes essentiel à notre mission !</h4>
-                    <h5>Aidez-nous à développer Lege en finançant des extensions, en partageant vos expériences et vos
-                      avis. Votre soutien nous permettra d'améliorer notre service pour tous.</h5>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
-                  </br><a rel="nofollow" href="mailto:lege-web@proton.me" class="btn btn-common">Contactez-nous</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-          <!-- Call To Action Section Start -->
-        </div>
-        <div class="col-lg-5 col-md-12 col-xs-12">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.2418004834817!2d4.8271744000000005!3d45.7462982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild+Code+School+-+Formation+d%C3%A9veloppeur+web,+data+analyst,+informatique,+web+design!5e0!3m2!1sfr!2sfr!4v1720094518904!5m2!1sfr!2sfr"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Section End -->
-
-
-
-  <!-- Footer Section Start -->
-  <footer id="footer" class="footer-area section-padding">
-    <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-            <div class="widget">
-              <h3 class="footer-logo"><img src="assets/img/logo-light-tiny.jpg" alt=""></h3>
-              <div class="textwidget">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et
-                  euismod
-                  purus suscipit quis.</p>
-              </div>
-              <div class="social-icon">
-                <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <h3 class="footer-titel">Contact</h3>
-          <ul class="address">
-            <li>
-              <address>
-                <a href="https://www.google.com/maps/place/17+Rue+Delandine,+69002+Lyon,+France" target="_blank">
-                  <i class="lni-map-marker"></i>
-                  17 Rue Delandine, <br>
-                  69002 Lyon, France
-                </a>
-              </address>
-            </li>
-
-            <li>
-              <a href="#"><i class="lni-envelope"></i> lege-web@proton.me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright-content">
-              <p>Copyright © 2024 <a rel="nofollow" href="">Lege</a> All Right Reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Section End -->
-
-  <!-- Go to Top Link -->
-  <a href="#" class="back-to-top">
-    <i class="lni-arrow-up"></i>
-  </a>
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader" id="loader-1"></div>
-  </div>
-  <!-- End Preloader -->
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/jquery-min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/scrolling-nav.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/jquery.counterup.min.js"></script>
-  <script src="assets/js/waypoints.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="./groq.js"></script>
-
-</body>
-
-</html>
+</section>
