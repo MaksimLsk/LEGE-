@@ -33,6 +33,13 @@
             align-items: center;
             height: 100vh;
         }
+
+        .response-container {
+            margin: 4em 25%;
+            color: black;
+            text-align: center;
+            font-size: 2em;
+        }
     </style>
 </head>
 
@@ -84,17 +91,20 @@
     <!-- Header Area wrapper End -->
 
     <!-- Loading Section Start -->
-    <div class="loading-container">
-        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
-            <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20"
-                stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
-            <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20"
-                stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
-            <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
-                stroke-dasharray="0 440" stroke-linecap="round"></circle>
-            <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
-                stroke-dasharray="0 440" stroke-linecap="round"></circle>
-        </svg>
+    <div id="response-container" class="hero-area-bg response-container">
+        <p>La Yale School of Art cherche un technicien à temps partiel pour son atelier de fabrication à partir de
+            juin/juillet 2024. Le poste implique de travailler 20 heures par semaine dans un espace de travail de 6100
+            pieds carrés pour le bois et le métal. Les responsabilités incluent la supervision de la sécurité,
+            l'entretien des
+            machines, la formation des étudiants et la gestion de l'inventaire. Un diplôme de licence et trois ans
+            d'expérience en sculpture ou fabrication sont requis. Les candidats doivent envoyer leur CV, lettre de
+            motivation et photos de projets réalisés à fabshop@yale.edu.
+        </p>
+        <!-- Audio player -->
+        <audio controls>
+            <source src="assets/audio/response1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
     <!-- Loading Section End -->
 
@@ -107,9 +117,7 @@
                         <h3 class="footer-logo"><img src="assets/img/logo-light-tiny.jpg" alt=""></h3>
                         <div class="textwidget">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est,
-                                et
-                                euismod
-                                purus suscipit quis.</p>
+                                et euismod purus suscipit quis.</p>
                         </div>
                         <div class="social-icon">
                             <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>

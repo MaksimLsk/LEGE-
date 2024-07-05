@@ -10,7 +10,6 @@ html {
 
 .search {
   display: flex;
-  align-items: center;
   text-align: center;
   width: 70vw;
 }
@@ -1358,9 +1357,9 @@ textarea {
 
 /*cta
 */
-#cta {
+/* #cta {
   background: ;
-}
+} */
 
 /* Footer Area Start */
 .footer-area {
@@ -1499,4 +1498,19 @@ textarea {
 
 .social-icon .google:hover {
   background: #ce332a;
+}
+
+.button {
+  width: 3rem;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: transparent;
+}
+
+.button:foucus {
+  color: transparent;
+  background-color: transparent;
 }

@@ -156,6 +156,18 @@
     <!-- Other necessary scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                window.location.href = '/loading';
+            }
+        });
+
+        // Set a timer to redirect to ./response.html after 5 seconds
+        setTimeout(function () {
+            window.location.href = './response1.html';
+        }, 5000);
+    </script>
 </body>
 
 </html>
