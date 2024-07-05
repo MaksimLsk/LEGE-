@@ -10,7 +10,6 @@ html {
 
 .search {
   display: flex;
-  align-items: center;
   text-align: center;
   width: 70vw;
 }
@@ -157,6 +156,10 @@ a:not([href]):not([tabindex]) {
   position: relative;
 }
 
+.title {
+  color: white;
+}
+
 .test {
   color: white
 }
@@ -202,6 +205,21 @@ a:not([href]):not([tabindex]) {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   display: inline-block;
+}
+
+.button {
+  width: 3rem;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: transparent;
+}
+
+.button:foucus {
+  color: transparent;
+  background-color: transparent;
 }
 
 .btn:focus,
